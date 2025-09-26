@@ -1,0 +1,86 @@
+{% extends 'website/common/base.html' %}
+{% block title %}Sign Up 📝{% endblock %}
+
+{% block main_content %}
+    <style>
+        /* Ensures the form container fills the available height for centering */
+        .centered-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh; 
+        }
+        .login-card {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 1.5rem; /* Smoother, larger radius */
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+        }
+    </style>
+    
+    <div class="container centered-form">
+        <div class="card login-card border-0">
+            <div class="card-body p-5">
+                <h3 class="card-title text-center mb-5 fw-bolder text-dark">
+                    Create Your Account ✍️
+                </h3>
+                
+                <form method="POST" action="{% url 'signup' %}" class="needs-validation" novalidate>
+                    {% csrf_token %}
+
+                    {# Display non-field errors (like passwords not matching) with enhanced style #}
+                    {% if form.non_field_errors %}
+                        <div class="alert alert-danger fade show mb-4 small" role="alert">
+                            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                            {% for error in form.non_field_errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+
+                    {# 1. Username Input (Floating Label) #}
+                    <div class="form-floating mb-3">
+                        {{ form.username }}
+                        <label for="{{ form.username.id_for_label }}">Username</label>
+                        {% for error in form.username.errors %}<div class="invalid-feedback d-block">{{ error }}</div>{% endfor %}
+                    </div>
+                    
+                    {# 2. Email Input (Floating Label) #}
+                    <div class="form-floating mb-3">
+                        {{ form.email }}
+                        <label for="{{ form.email.id_for_label }}">Email Address</label>
+                        {% for error in form.email.errors %}<div class="invalid-feedback d-block">{{ error }}</div>{% endfor %}
+                    </div>
+                    
+                    {# 3. Password Input (Floating Label) #}
+                    <div class="form-floating mb-3">
+                        {{ form.password1 }}
+                        <label for="{{ form.password1.id_for_label }}">Password</label>
+                        {% for error in form.password1.errors %}<div class="invalid-feedback d-block">{{ error }}</div>{% endfor %}
+                    </div>
+                    
+                    {# 4. Password Confirmation Input (Floating Label) #}
+                    <div class="form-floating mb-4">
+                        {{ form.password2 }}
+                        <label for="{{ form.password2.id_for_label }}">Confirm Password</label>
+                        {% for error in form.password2.errors %}<div class="invalid-feedback d-block">{{ error }}</div>{% endfor %}
+                    </div>
+                    
+                    <div class="d-grid mt-4">
+                        <button type="submit" class="btn btn-success btn-lg fw-bold">
+                            <i class="bi bi-person-plus-fill me-2"></i> Sign Up
+                        </button>
+                    </div>
+                </form>
+                
+                <p class="text-center mt-4 text-muted small">
+                    Already registered? 
+                    <a href="{% url 'login' %}" class="fw-bold text-decoration-none text-primary">
+                        Log In Now
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
