@@ -1,0 +1,276 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-09-19T06:27:41.309Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Products object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-09-19T06:28:04.152Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Products object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-09-20T05:28:14.572Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Product object (2)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-09-20T05:31:00.218Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Review object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-09-20T05:37:31.376Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Product object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-09-25T08:51:25.017Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "k@gmail.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "zz0vflsrp41fe0bwww8w5li1ozi2ek6a",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllx_A0lPWew1t5dHEC2FCcV4u4QKQW0b2beS0TY1hK3TkucUZyFEqffLUF-UN0B3qHemsytrsuc5K7Ig3Z5bUjPy-H-HRTo5VsnOyKiC8oMmjkAa-8MEFnNJhsNFKbESDmwcsOUCa1XPo3GJ2DvOYv3BwVmOQY:1v1z1f:cdyDAEma3Dig1CdrhKwVKbaLRzymBtbas10BVLofUaA",
+    "expire_date": "2025-10-10T03:21:39.366Z"
+  }
+},
+{
+  "model": "website.authuser",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$QUV8AqGkTSxcCessNsyefv$+ha9MZEV1tNlkkLdyvICvgt9Fr9cG8hsbr0w9utoHFw=",
+    "last_login": "2025-09-26T03:21:39.355Z",
+    "is_superuser": true,
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-09-24T10:50:01.380Z",
+    "email": "keerthi@gmail.com",
+    "username": "keerthi"
+  }
+},
+{
+  "model": "website.authuser",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$BIm9WczQrMdbtlhKWoF3Ki$lWg9aw8vutnjaG9Yg91I/Q8D8jrwCH1QyizTs5f/Woo=",
+    "last_login": "2025-09-25T03:21:49.517Z",
+    "is_superuser": false,
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-25T03:21:46.898Z",
+    "email": "theja@gmail.com",
+    "username": "theja"
+  }
+},
+{
+  "model": "website.authuser",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$ay6JUZZCTXfpH4aVzNs42g$zqzujazTAtlwXHr82i7/Oh/zaYd4hCmyQpdz//4VD8Q=",
+    "last_login": "2025-09-25T03:26:01.926Z",
+    "is_superuser": false,
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-25T03:24:57.789Z",
+    "email": "joshika@gmail.com",
+    "username": "joshika"
+  }
+},
+{
+  "model": "website.authuser",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$UVM5mjgYgB4VI7ZJtyJ0hs$VM8RR86kHoNYLkq6bzHCr0PhE202Uv+Kfoudpe0qbb0=",
+    "last_login": "2025-09-25T04:23:15.596Z",
+    "is_superuser": false,
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-25T04:23:13.658Z",
+    "email": "padmaja@gmail.com",
+    "username": "padmaja"
+  }
+},
+{
+  "model": "website.authuser",
+  "pk": 5,
+  "fields": {
+    "password": "K@123",
+    "last_login": null,
+    "is_superuser": false,
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-25T08:50:50Z",
+    "email": "k@gmail.com",
+    "username": "k"
+  }
+},
+{
+  "model": "website.authuser",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$uEkRBJLnEIp625gritqPac$U42r1dhkulk/gxJNYq1HxsUx5J9IOAJyzSQ/nDKEm+k=",
+    "last_login": "2025-09-25T10:11:05.657Z",
+    "is_superuser": false,
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-25T10:11:03.510Z",
+    "email": "padmaja1@gmail.com",
+    "username": "padmaja1"
+  }
+},
+{
+  "model": "website.product",
+  "pk": 1,
+  "fields": {
+    "name": "Updated Product",
+    "description": "Updated description",
+    "price": "180.00",
+    "stock": 15
+  }
+},
+{
+  "model": "website.product",
+  "pk": 3,
+  "fields": {
+    "name": "Barbie doll",
+    "description": "Doll in pink color with bloned hair",
+    "price": "1500.00",
+    "stock": 2
+  }
+},
+{
+  "model": "website.product",
+  "pk": 12,
+  "fields": {
+    "name": "pen",
+    "description": "blue",
+    "price": "10.00",
+    "stock": 300
+  }
+},
+{
+  "model": "website.product",
+  "pk": 13,
+  "fields": {
+    "name": "sd",
+    "description": "sda",
+    "price": "32.00",
+    "stock": 10
+  }
+},
+{
+  "model": "website.product",
+  "pk": 14,
+  "fields": {
+    "name": "pencil",
+    "description": "blue",
+    "price": "5.00",
+    "stock": 5000
+  }
+},
+{
+  "model": "website.product",
+  "pk": 15,
+  "fields": {
+    "name": "mobile",
+    "description": "black 15 inch",
+    "price": "20000.00",
+    "stock": 10
+  }
+},
+{
+  "model": "website.review",
+  "pk": 2,
+  "fields": {
+    "product": 1,
+    "user": 1,
+    "rating": 3,
+    "comment": "Good",
+    "created_at": "2025-09-25T13:30:19.542Z"
+  }
+},
+{
+  "model": "website.review",
+  "pk": 3,
+  "fields": {
+    "product": 3,
+    "user": 1,
+    "rating": 3,
+    "comment": "Nice",
+    "created_at": "2025-09-25T13:31:18.863Z"
+  }
+},
+{
+  "model": "website.review",
+  "pk": 4,
+  "fields": {
+    "product": 3,
+    "user": 1,
+    "rating": 2,
+    "comment": "Good doll",
+    "created_at": "2025-09-25T13:50:56.752Z"
+  }
+},
+{
+  "model": "website.review",
+  "pk": 5,
+  "fields": {
+    "product": 3,
+    "user": 1,
+    "rating": 2,
+    "comment": "Good quality",
+    "created_at": "2025-09-25T13:58:58.550Z"
+  }
+}
+]
