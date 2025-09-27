@@ -17,8 +17,7 @@ def product_list(request):
     products = Product.objects.all()
     serializer = ProductSerializer(products, many=True)
     return Response(serializer.data)
-
-# POST to add new product  
+  
 @api_view(['POST'])
 def product_add(request):
     print("POST Product add API called")
